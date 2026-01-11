@@ -24,7 +24,7 @@ class AIPEndpoint(ABC):
     Subclasses implement specific endpoint types:
     - DeviceServerEndpoint: Server-side device connection management
     - DeviceClientEndpoint: Client-side device operations
-    - orionEndpoint: orion client operations
+    - OrionEndpoint: Orion client operations
     """
 
     def __init__(
