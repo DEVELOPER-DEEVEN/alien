@@ -2,7 +2,7 @@
 """
 Orion Client Endpoint
 
-Wraps the existing Galaxy orion client with AIP protocol abstractions.
+Wraps the existing Cluster orion client with AIP protocol abstractions.
 """
 
 import logging
@@ -53,7 +53,7 @@ class OrionEndpoint(AIPEndpoint):
         self.registration_protocol = registration_protocol
 
         # Import here to avoid circular dependency
-        from galaxy.client.components.connection_manager import (
+        from cluster.client.components.connection_manager import (
             WebSocketConnectionManager,
         )
 
